@@ -289,19 +289,27 @@ form input,textarea,.btn3{
 }
 /* ___________responsive______ */
 @media only screen and (max-width:980px){
+    .ser-box{
+    align-items: flex-start;
+      }
+      .ser-box img {
+    width: 60%;
+    padding: 0;
+}
+.ser-box div{
+    margin: 2% 0;
+}
     .rowline {
         flex-basis: 18%;
+    }
+    .row img{
+        height: 230px;
     }
     .rowline ul li{
         padding: 5px 2px;
     }
     .ser-box{
         flex-direction: column;
-    }
-    .ser-box img{
-        height: 225px;
-        padding-right: 3%;
-        width: 100%;
     }
     .user_box {
         flex-direction: column;
@@ -340,14 +348,14 @@ form input,textarea,.btn3{
     .v-class{
         opacity: 0;
     }
-    .types{
+    /* .types{
         width: 55%;
-    }
+    } */
     .row{
         flex-direction: column;
     }
     .row img{
-        height: 300px;
+        height: 330px;
     }
     .footer_container{
         flex-direction: column;
@@ -360,11 +368,12 @@ form input,textarea,.btn3{
     .col .para{
         padding-bottom: 4%;
     }
-    .ser-box img{
-        height: 180px;
-    }
     .ser-box p{
-        font-size: 10px;
+        font-size: 9px;
+    }
+    
+    .ser-box h3{
+       font-size: 20px;
     }
     .user_box img{
         width: 120px;
@@ -379,4 +388,29 @@ form input,textarea,.btn3{
         width: 80%;
         margin: 0;
     }
+}
+@media only screen and (max-width:490px){
+.main_pg h3{
+    font-size: 3rem;
+}
+.top_heading{
+    font-size: 30px;
+    text-align: center;
+}
+.quote{
+    font-size: 17px;
+    text-align: center;
+}
+.row img{
+height: 250px;
+}
+.services{
+    flex-direction: column;
+}
+.contact_sec{
+        padding: 3%;
+}
+.main_p{
+    padding-top: 40%;
+}
 }
